@@ -26,7 +26,7 @@ const thumbnailsDir = path.join(uploadsDir, 'thumbnails');
 // Middleware
 const corsOptions = {
   origin: process.env.NODE_ENV === 'production'
-    ? ['https://realadvocacy.com', 'https://www.realadvocacy.com']
+    ? ['https://realadvocacy.us', 'https://www.realadvocacy.us']
     : ['http://localhost:5173', 'http://localhost:3000'],
   credentials: true
 };
