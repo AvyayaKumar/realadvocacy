@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Database
+*.sqlite
+
+# Uploads (don't commit user uploads)
+backend/uploads/videos/*
+backend/uploads/thumbnails/*
+!backend/uploads/videos/.gitkeep
+!backend/uploads/thumbnails/.gitkeep
+
+# Build output
+frontend/dist/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
