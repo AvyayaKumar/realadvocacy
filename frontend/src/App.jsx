@@ -4,6 +4,9 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import ForgotPassword from './pages/ForgotPassword';
+import ResetPassword from './pages/ResetPassword';
+import AccountSettings from './pages/AccountSettings';
 import Upload from './pages/Upload';
 import Watch from './pages/Watch';
 import Channel from './pages/Channel';
@@ -21,6 +24,9 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />
+              <Route path="/forgot-password" element={<ForgotPassword />} />
+              <Route path="/reset-password" element={<ResetPassword />} />
+              <Route path="/settings" element={<AccountSettings />} />
               <Route path="/upload" element={<Upload />} />
               <Route path="/video/:id" element={<Watch />} />
               <Route path="/profile/:id" element={<Channel />} />

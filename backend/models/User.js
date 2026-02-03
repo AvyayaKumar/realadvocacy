@@ -87,6 +87,15 @@ const User = sequelize.define('User', {
   followers: {
     type: DataTypes.INTEGER,
     defaultValue: 0
+  },
+  // Password reset
+  resetToken: {
+    type: DataTypes.STRING,
+    defaultValue: null
+  },
+  resetTokenExpiry: {
+    type: DataTypes.DATE,
+    defaultValue: null
   }
 }, {
   hooks: {
